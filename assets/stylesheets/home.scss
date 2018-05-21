@@ -62,4 +62,69 @@
             }
         }
     }
+
+    section#home-my-info {
+        background-color: #ECEAE2;
+        h2.home-my-info-title {
+            text-align: center;
+        }
+        .home-my-info-content-section {
+            width: 100%;
+            font-weight: 300;
+            display: flex;
+            justify-content: space-between;
+            .content-section-pic {
+                width: 30%;
+                img {
+                    width: 100%;
+                }
+            }
+            .content-section-text {
+                width: 100%;
+                padding: 1em 0em;
+                line-height: 1.5em;
+                font-size: 2em;
+            }
+            .content-section-text.with-pic {
+                width: 70%;
+            }
+        }
+    }
+    section#home-my-projects {
+        background-color: #41565B;
+        color: #fff;
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            .background-image {
+                position: absolute;
+                max-width: 100vw;
+                width: 114%;
+                left: -7%;
+                top: -17em;
+            }
+            .home-my-projects-title {
+                width: 30%;
+                z-index: 1;
+                padding-right: calc(30% - 220px);
+                padding-top: 2em;
+            }
+            .home-my-projects-slider {
+                width: 70%;
+                margin-bottom: 4em;
+                .carousel-indicators {
+                    bottom: -3.5em;
+                    li {
+                        border-radius: 0px;
+                        border-top:none;
+                        border-bottom: none;
+                        width: 5em;
+                        margin: -2px;
+                        height: 8px;
+                    }
+                }
+            }
+        }
+    }
 }
