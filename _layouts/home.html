@@ -2,7 +2,9 @@
 <html lang="en-US">
     <div id="home">
     <!--Header-->
+    <head>
         {% include header.html %}
+    </head>
     <!--Navigation-->
         {% include navigation.html %}
     <!--Main-->
@@ -11,8 +13,8 @@
                 <div class="jumbotron-main">
                     <h1 class="home-title"><span class="heading-line">I</span>LENE <span class="heading-line">L</span>U</h1>
                     <div class="jumbotron-right">
-                        <p class="home-desciption">Apollonius of Perga! Prime number across the centuries. </p>
-                        <btn class="callout"><span>View My Resume</span>
+                        <p class="home-desciption">Either I will find a way<br/>or I will make one</p>
+                        <btn class="callout"><a href="assets/files/Ilene_Lu_Resume.pdf" target="_blank">View My Resume</a>
                                 <img src="assets/images/arrow-right-white.svg"/>
                         </btn>
                     </div>
@@ -29,18 +31,15 @@
                         </div>
                         <div class="content-section-text with-pic">
                             <p>
-                            Candidate of Bachelor of Computer Science
-                            Globular star cluster hearts of the stars Tunguska event birth, 
-                            dream of the mind's eye cosmic fugue Euclid inconspicuous motes 
-                            of rock and gas? Decipherment! </p>
+                            <span class="content-degree">Candidate of Bachelor of Computer Science,</span><span class="content-time"> Sep. 2015 - present</span> 
+                            <br/>
+                                As a student majoring in Computer Science, I am passionate about and experienced in <span class="content-normal-weight">Design and Web Development</span>. I also have deep interests in <span class="content-normal-weight">Mathematics</span> and its application in Computer Science like <span class="content-normal-weight">Computer Graphics</span> and <span class="content-normal-weight">Algorithm Design</span>. Taking advanced mathematics courses, I am also pursuing a minor in <span class="content-normal-weight">Statistics</span> and <span class="content-normal-weight">Combinatorics & Optimization</span>.
+                            </p>
                         </div>
                     </div>
                     <div class="home-my-info-content-section">
                             <div class="content-section-text">
-                                    Rich in mystery globular star cluster tingling of the spine, courage 
-                                    of our questions consciousness! Hydrogen atoms culture cosmic 
-                                    fugue Euclid cosmos decipherment, radio telescope explorations 
-                                    birth radio telescope.
+                                <p>Besides my academic and professional interests, I am also passionate in Fashion Design, Photography and Music. As leader of my high school fashion design team, I lead the team to attend fashion design competitions and organized fashion shows. In college, I am an A Capella group member. I participated performances and arranged songs for the group. </p>
                             </div>    
                     </div>
                 </div>
@@ -63,24 +62,24 @@
       
                                 <div class="carousel-inner">
                                 <div class="item active">
-                                <img src="assets/images/first_slide.svg">
+                                <img src="assets/images/responsive-design.png">
                                 <div class="carousel-caption d-none d-md-block">
-                                        <h5>...</h5>
-                                        <p>...</p>
+                                        <h5>Designed and developed the responsive personal website(In Progress)</h5>
+                                        <p>Languages used: HTML5/CSS/Javascript, SASS, AngularJS</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                <img src="assets/images/second_slide.svg">
+                                <img src="assets/images/petpet.png">
                                 <div class="carousel-caption d-none d-md-block">
-                                        <h5>...</h5>
-                                        <p>...</p>
+                                        <h5>Designed and developed the Android utility application PetPet(In Progress)</h5>
+                                        <p>Petpet is a realistic pet simulator.</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                <img src="assets/images/third_slide.svg">
+                                <img src="assets/images/dr_do.png">
                                 <div class="carousel-caption d-none d-md-block">
-                                        <h5>...</h5>
-                                        <p>...</p>
+                                        <h5>Developed the static of Dr.Do Studio Website(In Progress)</h5>
+                                        <p>Languages used: HTML5/CSS/Javascript, SASS</p>
                                 </div>
                                 </div>
                             </div>
@@ -96,5 +95,35 @@
                 </div>
             </div>
         </section>
+        <section id="home-blogs">
+                <div class="container">
+                        <h2 class="home-blogs-title">B<span class="heading-line">l</span>o<span class="heading-line">g</span>s</h2>
+                        <div class="blog-list">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="assets/images/logo-full-black.svg"/>
+                                </div>
+                                <h5 class="blog-title">Available Soon</h5>
+                                <div class="blog-post-date">...</div>
+                            </div>
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="assets/images/logo-full-black.svg"/>
+                                </div>
+                                <h5 class="blog-title">Available Soon</h5>
+                                <div class="blog-post-date">...</div>
+                            </div>
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="assets/images/logo-full-black.svg"/>
+                                </div>
+                                <h5 class="blog-title">Available Soon</h5>
+                                <div class="blog-post-date">...</div>
+                            </div>
+                        </div>
+                </div>
+        </section>
+        <!--footer-->
+        {% include footer.html %}
     </div>
 </html>

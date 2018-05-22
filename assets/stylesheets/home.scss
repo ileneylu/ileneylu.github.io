@@ -45,6 +45,10 @@
                     font-weight: 300;
                     text-transform: uppercase;
                     position: relative;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
                     img {
                         fill: #fff;
                         height: 1em;
@@ -83,7 +87,16 @@
                 width: 100%;
                 padding: 1em 0em;
                 line-height: 1.5em;
-                font-size: 2em;
+                font-size: 1.7em;
+                span.content-degree {
+                    display: inline-block;
+                    margin-bottom: 0.6em;
+                    font-weight: 700;
+                    font-size: 1.2em
+                }
+                span.content-normal-weight {
+                    font-weight: 500;
+                }
             }
             .content-section-text.with-pic {
                 width: 70%;
@@ -123,6 +136,53 @@
                         margin: -2px;
                         height: 8px;
                     }
+                }
+                .carousel-inner {
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    .carousel-caption {
+                        width: 100%;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        padding-left:2em;
+                        padding-right: 2em;
+                        background-color: #fff;
+                        color: #142431;
+                        text-shadow: none;
+                        h5 {
+                            font-size: 1.5em;
+                        }
+                        p {
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#home-blogs{
+        background-color: #ECEAE2;
+        h2 {
+            text-align: center;
+        }
+        .blog-list {
+            margin-top: 4em;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .blog-item {
+                border: 1px solid #142431;
+                border-radius: 5px;
+                width: 28%;
+                padding: 1em;
+                text-align: center;
+                .blog-img {
+                    padding: 1em 5em;
+                }
+                h5.blog-title {
+                    margin-top: 1em;
+                    font-size: 1.5em;
                 }
             }
         }
